@@ -1,0 +1,78 @@
+@media screen and (max-width: 1550px) {
+  #sobre{
+    width:85%;
+  }
+  #sobre img{
+    width:90vh;
+  }
+  #projetos{
+    width: 85%;
+  }
+  #habilidades{
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #sobre{
+    width:87%;
+  }
+
+  #sobre img{
+    width:80vh;
+  }
+  #projetos{
+    width: 85%;
+  }
+  #habilidades{
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #sobre{
+    width:80%;
+  }
+
+  #sobre img{
+    width:60vh;
+  }
+
+  #sobre h1{
+    font-size: 50px;
+  }
+  #sobre p{
+    font-size: 15px;
+  }
+  #projetos{
+    width: 80%;
+  }
+  #habilidades{
+    width: 80%;
+  }
+  .barra-vertical{
+    display: none;
+  }
+  #habilidades .minhas-habilidades{
+    box-shadow: none;
+    border: none;
+    margin-left: 0px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1150px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    
+}
+
+
+
+  
