@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Camille Barbosa</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#sobre" id="sobreButton" >Sobre Mim</a></li>
+                <li><a href="#projetos">Meus projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Camille Barbosa</div>
+        <div class="hamburger-menu"></div>
+        <div class="hamburger-icon"  onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        <div class="menu-links" onclick="toggleMenu()">
+            <li><a href="#sobre" id="sobreButton" >Sobre Mim</a></li>
+            <li><a href="#projetos">Meus projetos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic (4).png" alt="">
+        </div>
+        <div id="intro">
+            <div class="texto">
+            <p class="section_text_p1">Olá, eu sou</p>
+            <h1 class="title"> Camille Barbosa</h1>
+            <p class="section_text_p2">Desenvolvedora Frontend</p>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/camillebarbosa_curriculo.pdf')" download="camillebarbosa_curriculo.pdf">Baixar Currículo</button>
+
+                <button class="btn btn-color-1" onclick="location.href='mailto:camillebarbosadossantos@gmail.com'">Contato</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Meu LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/camille-barbosa-96a98729b/'">
+
+                <img src="./assets/github.png" alt="Meu Github" class="icon" onclick="location.href='https://github.com/camillebarbosa'">
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" onclick="">
+        <div class="texto">
+            <h1 >Sobre Mim.</h1>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas na Fatec de Americana com formação complementar em Desenvolvimento Web, incluindo HTML5, CSS e JavaScript. Adentrando e conhecendo mais essa carreira tenho me apaixonado por desenvolvimento web e estou em busca de uma oportunidade de estágio para aplicar e expandir meus conhecimentos técnicos e habilidades de resolução de problemas em um ambiente inovador. Com minha experiência em atendimento ao público acredito que posso agregar muito valor em meu trabalho. Certificado de inglês INTERMEDIÁRIO/AVANÇADO no Test of English for International Communication (TOEIC) da empresa ETS. Sempre muito empenhada a aprender mais e mais...</p>
+            </div>
+            <div class="barra-vertical"></div>
+            <div class="certificado">
+                <img src="/assets/certificado_toeic.JPG" alt="" >
+
+            </div>
+    </section>
+
+    <section id="projetos">
+        <div class="texto">
+        <h1 class="typing">Meus Projetos.</h1>
+        <p>Ainda não possuo experiência na área, por isso desenvolvi cases de estudos para por em prática meus conhecimentos.</p>
+        </div>
+   
+        <div class="meus-projetos">
+            <div class="projeto-details">
+            <h2>PROJETO 1</h2>
+            <img src="/assets/project-1.png" alt="" width="260px" height="300px">
+            <p> Formulário responsivo com HTML, CSS e JAVASCRIPT. </p>
+            <div class="btnGitHub">
+
+            <button onclick="window.open('https://github.com/camillebarbosa/Formulario')">Github</button>
+
+            <button onclick="window.open('https://camillebarbosa.github.io/formulario-responsivo/')">Live Viewer</button>
+            </div>
+            </div>
+            
+            <div class="projeto-details">
+                <h2>PROJETO 2</h2>
+                <img src="assets/projeto-em_breve.png" alt="" width="280" height="240px" >
+                <p> Projeto em desenvolvimento. Uma loja virtual com um carrinho de compras capaz de adicionar e remover os itens da lista...</p>
+                <div class="btnGitHub">
+
+            <button>Github</button>
+            
+            <button>Live Viewer</button>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <div class="texto">
+        <h1>Minhas Habilidades.</h1>
+        <p>Essas são minhas habilidades desenvolvidas.</p>
+        </div>
+        <div class="barra-vertical"></div>
+        <div class="minhas-habilidades">
+            <div class="hardskill">
+           <h2><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M9 2a1 1 0 0 0-1 1H6a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2a1 1 0 0 0-1-1H9Zm1 2h4v2h1a1 1 0 1 1 0 2H9a1 1 0 0 1 0-2h1V4Zm5.707 8.707a1 1 0 0 0-1.414-1.414L11 14.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd"/>
+          </svg>
+          HARD SKILLS...</h2>
+            <div class="habilidades-details">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.032 12 1.984 1.984 4.96-4.96m4.55 5.272.893-.893a1.984 1.984 0 0 0 0-2.806l-.893-.893a1.984 1.984 0 0 1-.581-1.403V7.04a1.984 1.984 0 0 0-1.984-1.984h-1.262a1.983 1.983 0 0 1-1.403-.581l-.893-.893a1.984 1.984 0 0 0-2.806 0l-.893.893a1.984 1.984 0 0 1-1.403.581H7.04A1.984 1.984 0 0 0 5.055 7.04v1.262c0 .527-.209 1.031-.581 1.403l-.893.893a1.984 1.984 0 0 0 0 2.806l.893.893c.372.372.581.876.581 1.403v1.262a1.984 1.984 0 0 0 1.984 1.984h1.262c.527 0 1.031.209 1.403.581l.893.893a1.984 1.984 0 0 0 2.806 0l.893-.893a1.985 1.985 0 0 1 1.403-.581h1.262a1.984 1.984 0 0 0 1.984-1.984V15.7c0-.527.209-1.031.581-1.403Z"/>
+                  </svg>
+                  
+                <h3>HTML 5</h3> 
+                <p>Avançado</p>                 
+            </div>
+
+            <div class="habilidades-details">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.032 12 1.984 1.984 4.96-4.96m4.55 5.272.893-.893a1.984 1.984 0 0 0 0-2.806l-.893-.893a1.984 1.984 0 0 1-.581-1.403V7.04a1.984 1.984 0 0 0-1.984-1.984h-1.262a1.983 1.983 0 0 1-1.403-.581l-.893-.893a1.984 1.984 0 0 0-2.806 0l-.893.893a1.984 1.984 0 0 1-1.403.581H7.04A1.984 1.984 0 0 0 5.055 7.04v1.262c0 .527-.209 1.031-.581 1.403l-.893.893a1.984 1.984 0 0 0 0 2.806l.893.893c.372.372.581.876.581 1.403v1.262a1.984 1.984 0 0 0 1.984 1.984h1.262c.527 0 1.031.209 1.403.581l.893.893a1.984 1.984 0 0 0 2.806 0l.893-.893a1.985 1.985 0 0 1 1.403-.581h1.262a1.984 1.984 0 0 0 1.984-1.984V15.7c0-.527.209-1.031.581-1.403Z"/>
+                  </svg>
+                  
+                                    
+                <h3>CSS 3</h3>       
+                <p>Intermediário</p>              
+            </div>
+
+            <div class="habilidades-details">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.032 12 1.984 1.984 4.96-4.96m4.55 5.272.893-.893a1.984 1.984 0 0 0 0-2.806l-.893-.893a1.984 1.984 0 0 1-.581-1.403V7.04a1.984 1.984 0 0 0-1.984-1.984h-1.262a1.983 1.983 0 0 1-1.403-.581l-.893-.893a1.984 1.984 0 0 0-2.806 0l-.893.893a1.984 1.984 0 0 1-1.403.581H7.04A1.984 1.984 0 0 0 5.055 7.04v1.262c0 .527-.209 1.031-.581 1.403l-.893.893a1.984 1.984 0 0 0 0 2.806l.893.893c.372.372.581.876.581 1.403v1.262a1.984 1.984 0 0 0 1.984 1.984h1.262c.527 0 1.031.209 1.403.581l.893.893a1.984 1.984 0 0 0 2.806 0l.893-.893a1.985 1.985 0 0 1 1.403-.581h1.262a1.984 1.984 0 0 0 1.984-1.984V15.7c0-.527.209-1.031.581-1.403Z"/>
+                  </svg>
+                  
+                  
+                <h3>JAVASCRIPT</h3> 
+                <p>Básico</p>    
+            </div>
+        </div>
+
+            <div class="softskill">
+                <h2><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M9 2a1 1 0 0 0-1 1H6a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2a1 1 0 0 0-1-1H9Zm1 2h4v2h1a1 1 0 1 1 0 2H9a1 1 0 0 1 0-2h1V4Zm5.707 8.707a1 1 0 0 0-1.414-1.414L11 14.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd"/>
+                  </svg>
+                  SOFT SKILLS...</h2>
+                <div class="habilidades-details">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.032 12 1.984 1.984 4.96-4.96m4.55 5.272.893-.893a1.984 1.984 0 0 0 0-2.806l-.893-.893a1.984 1.984 0 0 1-.581-1.403V7.04a1.984 1.984 0 0 0-1.984-1.984h-1.262a1.983 1.983 0 0 1-1.403-.581l-.893-.893a1.984 1.984 0 0 0-2.806 0l-.893.893a1.984 1.984 0 0 1-1.403.581H7.04A1.984 1.984 0 0 0 5.055 7.04v1.262c0 .527-.209 1.031-.581 1.403l-.893.893a1.984 1.984 0 0 0 0 2.806l.893.893c.372.372.581.876.581 1.403v1.262a1.984 1.984 0 0 0 1.984 1.984h1.262c.527 0 1.031.209 1.403.581l.893.893a1.984 1.984 0 0 0 2.806 0l.893-.893a1.985 1.985 0 0 1 1.403-.581h1.262a1.984 1.984 0 0 0 1.984-1.984V15.7c0-.527.209-1.031.581-1.403Z"/>
+                      </svg>
+                                  
+                <h3>COMUNICAÇÃO</h3>
+                <p>Avançado</p>      
+
+            </div>               
+            
+
+            <div class="habilidades-details">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.032 12 1.984 1.984 4.96-4.96m4.55 5.272.893-.893a1.984 1.984 0 0 0 0-2.806l-.893-.893a1.984 1.984 0 0 1-.581-1.403V7.04a1.984 1.984 0 0 0-1.984-1.984h-1.262a1.983 1.983 0 0 1-1.403-.581l-.893-.893a1.984 1.984 0 0 0-2.806 0l-.893.893a1.984 1.984 0 0 1-1.403.581H7.04A1.984 1.984 0 0 0 5.055 7.04v1.262c0 .527-.209 1.031-.581 1.403l-.893.893a1.984 1.984 0 0 0 0 2.806l.893.893c.372.372.581.876.581 1.403v1.262a1.984 1.984 0 0 0 1.984 1.984h1.262c.527 0 1.031.209 1.403.581l.893.893a1.984 1.984 0 0 0 2.806 0l.893-.893a1.985 1.985 0 0 1 1.403-.581h1.262a1.984 1.984 0 0 0 1.984-1.984V15.7c0-.527.209-1.031.581-1.403Z"/>
+                  </svg>
+                  
+                                    
+                <h3>ORGANIZAÇÃO</h3>
+                <p>Avançado</p>                     
+            </div>
+
+            <div class="habilidades-details">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.032 12 1.984 1.984 4.96-4.96m4.55 5.272.893-.893a1.984 1.984 0 0 0 0-2.806l-.893-.893a1.984 1.984 0 0 1-.581-1.403V7.04a1.984 1.984 0 0 0-1.984-1.984h-1.262a1.983 1.983 0 0 1-1.403-.581l-.893-.893a1.984 1.984 0 0 0-2.806 0l-.893.893a1.984 1.984 0 0 1-1.403.581H7.04A1.984 1.984 0 0 0 5.055 7.04v1.262c0 .527-.209 1.031-.581 1.403l-.893.893a1.984 1.984 0 0 0 0 2.806l.893.893c.372.372.581.876.581 1.403v1.262a1.984 1.984 0 0 0 1.984 1.984h1.262c.527 0 1.031.209 1.403.581l.893.893a1.984 1.984 0 0 0 2.806 0l.893-.893a1.985 1.985 0 0 1 1.403-.581h1.262a1.984 1.984 0 0 0 1.984-1.984V15.7c0-.527.209-1.031.581-1.403Z"/>
+                  </svg>
+                  
+                  
+                <h3>INGLÊS</h3> 
+                <p>Avançado</p>    
+
+            </div>
+        </div>
+    </div>
+
+            
+    </section>
+
+</body>
+</html>
